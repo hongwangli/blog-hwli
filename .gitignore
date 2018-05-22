@@ -1,0 +1,6 @@
+/_build/
+/_static/
+.ipynb_checkpoints/
+/.idea/
+.DS_Store
+

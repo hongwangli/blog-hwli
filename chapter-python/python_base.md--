@@ -1,0 +1,137 @@
+### os.listdir(path)  
+- 描述：
+  - ***返回path目录下的文件名和文件夹名***
+
+- 参数：
+  - path:输入目录
+- 示例：
+
+```{.python .input  n=1}
+import os
+c_files = os.listdir('/tmp')
+print(c_files)
+```
+
+```{.json .output n=1}
+[
+ {
+  "name": "stdout",
+  "output_type": "stream",
+  "text": "['fm_sg_cloud_cache.v0.filemap.sogouime_2.9.70580_00000000_501', '.keystone_install_lock', 'powerlog', 'com.apple.launchd.gIYetsdekL', 'escalatelantern.ico', 'com.sogou.inputmethod.qq', 'com.apple.launchd.BacPaf5EXH']\n"
+ }
+]
+```
+
+###  dict.setdefault(key, default=None)
+- 描述：
+ - ***Python 字典 setdefault()
+函数和get() 方法类似, 如果键不存在于字典中，将会添加键并将值设为默认值。***
+- 备注：
+ -
+与get()相同点：如果key存在，返回对应value，如果不存在，返回设定的值
+ -
+与get()不同点：如果key不存在，setdefault()更新dict，get()不更新dict
+ 
+-
+参考链接：http://www.runoob.com/python/att-dictionary-
+get.html；http://www.runoob.com/python/att-dictionary-setdefault.html
+
+- 示例：
+
+```{.python .input  n=2}
+dict = {'runoob': '菜鸟教程', 'google': 'Google 搜索'}
+print("Value : " , dict.setdefault('runoob', None))
+print("Value : " , dict.setdefault('Taobao', '淘宝'))
+print("new dict: ", dict)
+
+```
+
+```{.json .output n=2}
+[
+ {
+  "name": "stdout",
+  "output_type": "stream",
+  "text": "Value :  \u83dc\u9e1f\u6559\u7a0b\nValue :  \u6dd8\u5b9d\nnew dict:  {'runoob': '\u83dc\u9e1f\u6559\u7a0b', 'google': 'Google \u641c\u7d22', 'Taobao': '\u6dd8\u5b9d'}\n"
+ }
+]
+```
+
+```{.python .input  n=3}
+dict = {'runoob': '菜鸟教程', 'google': 'Google 搜索'}
+print("Value : %s" %  dict.get('runoob'))
+print("Value : %s" %  dict.get('baidu', "Never"))
+print("new dict is: ", dict)
+```
+
+```{.json .output n=3}
+[
+ {
+  "name": "stdout",
+  "output_type": "stream",
+  "text": "Value : \u83dc\u9e1f\u6559\u7a0b\nValue : Never\nnew dict is:  {'runoob': '\u83dc\u9e1f\u6559\u7a0b', 'google': 'Google \u641c\u7d22'}\n"
+ }
+]
+```
+
+### str1.split(str="", num=string.count(str))
+- 描述：
+ - ***Python split()
+通过指定分隔符对字符串进行切片，如果参数 num 有指定值，则仅分隔 num 个子字符串***
+ 
+- 参数：
+ -
+str：分隔符，默认为所有的空字符，包括空格、换行(\n)、制表符(\t)等
+ - num：分割的次数
+ 
+-
+参考链接：http://www.runoob.com/python/att-string-split.html
+
+- 示例：
+
+```{.python .input  n=4}
+str = "Line1-abcdef \nLine2-abc \nLine4-abcd";
+print(str.split( ));
+print(str.split(' ', 1 ));
+```
+
+```{.json .output n=4}
+[
+ {
+  "name": "stdout",
+  "output_type": "stream",
+  "text": "['Line1-abcdef', 'Line2-abc', 'Line4-abcd']\n['Line1-abcdef', '\\nLine2-abc \\nLine4-abcd']\n"
+ }
+]
+```
+
+### re.split(pattern, string, maxsplit=0, flags=0)
+- 描述：
+ -
+***对字符串按照正则表达式匹配的分割***
+
+- 参数：
+ - pattern：正则表达式
+ - string：待分割字符
+
+-
+参考链接：https://docs.python.org/3/library/re.html
+
+- 示例：
+
+```{.python .input  n=5}
+import re
+a='Beautiful, is; better*than\nugly'
+# 四个分隔符为：,  ;  *  \n
+x= re.split(',|; |\*|\n',a)
+print(x)
+```
+
+```{.json .output n=5}
+[
+ {
+  "name": "stdout",
+  "output_type": "stream",
+  "text": "['Beautiful', ' is', 'better', 'than', 'ugly']\n"
+ }
+]
+```
