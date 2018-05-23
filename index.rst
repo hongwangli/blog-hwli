@@ -11,7 +11,6 @@ Welcome to test's documentation!
    :caption: Contents:
 
    chapter-python/index
-   chapter-linux/index
 
 Indices and tables
 ==================
