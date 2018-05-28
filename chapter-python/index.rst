@@ -5,4 +5,5 @@ python编程基础
    :maxdepth: 2
 
    python_base
-
+   python_pandas
+   python_dict
