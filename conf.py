@@ -260,21 +260,20 @@ latex_elements = {
     'inputenc'  : '',
     'babel'     : r'''\usepackage[english]{babel}''',
     'preamble' : r'''
-\usepackage{ctex}
-\setmonofont{DejaVu Sans Mono}
-\setmainfont{DejaVu Serif}
-\setsansfont{DejaVu Sans}
-\setCJKmainfont{Source Han Serif SC Medium}
-\setCJKsansfont{Source Han Sans HW SC}
-\setCJKmonofont{Source Han Sans HW SC}
-
-\addto\captionsenglish{\renewcommand{\chaptername}{}}
-\addto\captionsenglish{\renewcommand{\contentsname}{目录}}
-
-\usepackage[draft]{minted}
-\fvset{breaklines=true, breakanywhere=true}
-\setlength{\headheight}{13.6pt}
-
+\hypersetup{unicode=true}
+\usepackage{CJKutf8}
+\DeclareUnicodeCharacter{00A0}{\nobreakspace}
+\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
+\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
+\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
+\DeclareUnicodeCharacter{2713}{x}
+\DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
+\DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
+\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
+\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
+\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
+\begin{CJK}{UTF8}{gbsn}
+\AtEndDocument{\end{CJK}}
 
 ''',
 # The paper size ('letterpaper' or 'a4paper').
