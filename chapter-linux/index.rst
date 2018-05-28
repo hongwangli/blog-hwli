@@ -1,4 +1,4 @@
-python编程基础
+linux学习笔记
 ==============
 
 .. toctree::
