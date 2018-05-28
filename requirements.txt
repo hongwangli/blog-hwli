@@ -2,4 +2,3 @@ sphinx>=1.4
 ipykernel
 nbsphinx
 docutils==0.14
-xelatex
