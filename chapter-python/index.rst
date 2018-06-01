@@ -7,3 +7,4 @@ python编程基础
    python_base
    python_pandas
    python_dict
+   python_slice
