@@ -1,13 +1,12 @@
-## git常用命令
+# git常用命令
 
-### git init
+## git init
 
 - 解释：
 
-
 	在项目根目录执行，初始化git
 
-### .gitignore文件
+## .gitignore文件
 
 - 命令：
 
@@ -20,7 +19,7 @@ vim .gitignore
 
 	在项目根目录建立该文件，在该目录中的文件文件夹不被追踪
 
-### git status
+## git status
 
 - 命令：
 
@@ -28,7 +27,7 @@ vim .gitignore
 git status  查看当前git状态
 ```
 
-### 添加远程目录
+## 添加远程目录
 
 - 命令：
 
@@ -45,7 +44,7 @@ git@github.com:hongwangli/python.git
 	origin： 为自定义名字
 git@github.com:hongwangli/python.git： 为github项地址
 
-### 查看远程目录
+## 查看远程目录
 
 - 命令：
 
@@ -58,7 +57,7 @@ git remote -v
 
 	显示文件夹中已经配置的githup仓库的地址别名
 
-### 添加文件 
+## 添加文件 
 
 - 命令
 
