@@ -256,29 +256,29 @@ htmlhelp_basename = 'SphinxwithMarkdowndoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {
+#latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-'papersize': 'a4paper',
-
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '12pt',
-
-'classoptions': ',english',
-'inputenc': '',
-'utf8extra': '',
-
-# Additional stuff for the LaTeX preamble.
-'preamble': '''
-\usepackage{xeCJK}
-\usepackage{indentfirst}
-\setlength{\parindent}{2em}
-\setCJKmainfont[BoldFont=Songti, ItalicFont=Songti]{Songti}
-\setCJKmonofont[Scale=0.9]{Consolas}
-\setCJKfamilyfont{song}[BoldFont=Songti]{Songti}
-\setCJKfamilyfont{sf}[BoldFont=Songti]{Songti}
-'''
-}
-
+#'papersize': 'a4paper',
+#
+## The font size ('10pt', '11pt' or '12pt').
+##'pointsize': '12pt',
+#
+#'classoptions': ',english',
+#'inputenc': '',
+#'utf8extra': '',
+#
+## Additional stuff for the LaTeX preamble.
+#'preamble': '''
+#\usepackage{xeCJK}
+#\usepackage{indentfirst}
+#\setlength{\parindent}{2em}
+#\setCJKmainfont[BoldFont=Songti, ItalicFont=Songti]{Songti}
+#\setCJKmonofont[Scale=0.9]{Consolas}
+#\setCJKfamilyfont{song}[BoldFont=Songti]{Songti}
+#\setCJKfamilyfont{sf}[BoldFont=Songti]{Songti}
+#'''
+#}
+#
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
