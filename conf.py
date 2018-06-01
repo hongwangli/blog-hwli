@@ -47,6 +47,7 @@ def setup(app):
 extensions = [
     'nbsphinx',
     'sphinx.ext.githubpages',
+    'rst2pdf.pdfbuilder'
 ]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -254,42 +255,29 @@ html_static_path = ['_static']
 htmlhelp_basename = 'SphinxwithMarkdowndoc'
 
 # -- Options for LaTeX output ---------------------------------------------
-latex_elements = {
-    # 'papersize' : 'a4paper',
-    'utf8extra' : '',
-    'inputenc'  : '',
-    'babel'     : r'''\usepackage[english]{babel}''',
-    'preamble' : r'''
-\hypersetup{unicode=true}
-\usepackage{CJKutf8}
-\DeclareUnicodeCharacter{00A0}{\nobreakspace}
-\DeclareUnicodeCharacter{2203}{\ensuremath{\exists}}
-\DeclareUnicodeCharacter{2200}{\ensuremath{\forall}}
-\DeclareUnicodeCharacter{2286}{\ensuremath{\subseteq}}
-\DeclareUnicodeCharacter{2713}{x}
-\DeclareUnicodeCharacter{27FA}{\ensuremath{\Longleftrightarrow}}
-\DeclareUnicodeCharacter{221A}{\ensuremath{\sqrt{}}}
-\DeclareUnicodeCharacter{221B}{\ensuremath{\sqrt[3]{}}}
-\DeclareUnicodeCharacter{2295}{\ensuremath{\oplus}}
-\DeclareUnicodeCharacter{2297}{\ensuremath{\otimes}}
-\begin{CJK}{UTF8}{gbsn}
-\AtEndDocument{\end{CJK}}
 
-''',
+latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+'papersize': 'a4paper',
 
 # The font size ('10pt', '11pt' or '12pt').
-'pointsize': '11pt',
+#'pointsize': '12pt',
+
+'classoptions': ',english',
+'inputenc': '',
+'utf8extra': '',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
-
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
-'figure_align': 'H',
+'preamble': '''
+\usepackage{xeCJK}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\setCJKmainfont[BoldFont=Songti, ItalicFont=Songti]{Songti}
+\setCJKmonofont[Scale=0.9]{Consolas}
+\setCJKfamilyfont{song}[BoldFont=Songti]{Songti}
+\setCJKfamilyfont{sf}[BoldFont=Songti]{Songti}
+'''
 }
-
 
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -300,7 +288,7 @@ latex_documents = [
      u'Marijn van der Zee', 'manual'),
 ]
 
-#latex_engine = 'xelatex'
+latex_engine = 'xelatex'
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #
