@@ -13,7 +13,6 @@ Welcome to test's documentation!
    chapter-python/index
    chapter-linux/index
 
-
 Indices and tables
 ==================
 
