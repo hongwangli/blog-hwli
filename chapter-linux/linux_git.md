@@ -185,18 +185,13 @@ git mv <oldname> <newname>
 - 命令：
 
 ```bash
-ssh-keygen -t
-rsa -C "e-mail@163.com"
-
+ssh-keygen -t rsa -C "e-mail@163.com"
 ```
 
 - 解释：
-
-
 	生成的公钥放到github上就能免密码提交
 
-###
-查看提交历史
+### 查看提交历史
 
 - 命令：
 
@@ -223,6 +218,15 @@ git reset --hard
 
 ```bash
 git diff [<filename>]
+```
+
+### 全局配置
+
+- 命令：
+
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 ```
 
 ### 参考链接：
