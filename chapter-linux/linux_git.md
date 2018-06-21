@@ -74,7 +74,7 @@ git add .
 	git add .
 添加所有不在.gitignore中的文件
 
-### 提交文件
+## 提交文件
 
 - 命令
 
@@ -92,7 +92,7 @@ git commit -am 'this commond join add and commit '
 	git commit -am <note> 合并git add 和
 git commit 修改文件后不用使用git add 命令
 
-### 推送到远程仓库
+## 推送到远程仓库
 
 - 命令：
 
@@ -107,7 +107,7 @@ git push -u origin master
 	
 	master 分支名
 
-### 查看提交历史
+## 查看提交历史
 
 - 命令：
 
@@ -115,7 +115,7 @@ git push -u origin master
 git log
 ```
 
-### 查看哪些文件在追踪
+## 查看哪些文件在追踪
 
 - 命令：
 
@@ -123,7 +123,7 @@ git log
 git ls-files
 ```
 
-### 构建分支
+## 构建分支
 
 - 命令
 
@@ -146,7 +146,7 @@ dev  : 切换到dev分支
 
 	git checkout -d dev  : 删除dev分支
 
-### 合并分支
+## 合并分支
 
 - 命令：
 
@@ -155,7 +155,7 @@ git checkout master
 git merge dev
 ```
 
-### 删除文件
+## 删除文件
 
 - 命令
 
@@ -172,7 +172,7 @@ git rm --cache <filename/dirname>|
 	git rm --cache <filename/dirname>
 只在远程删除
 
-### 重命名文件
+## 重命名文件
 
 - 命令：
 
@@ -180,7 +180,7 @@ git rm --cache <filename/dirname>|
 git mv <oldname> <newname>
 ```
 
-### 生成并添加ssh-key
+## 生成并添加ssh-key
 
 - 命令：
 
@@ -191,7 +191,7 @@ ssh-keygen -t rsa -C "e-mail@163.com"
 - 解释：
 	生成的公钥放到github上就能免密码提交
 
-### 查看提交历史
+## 查看提交历史
 
 - 命令：
 
@@ -199,7 +199,7 @@ ssh-keygen -t rsa -C "e-mail@163.com"
 git log
 ```
 
-### 恢复到指定版本
+## 恢复到指定版本
 
 - 命令：
 
@@ -212,7 +212,7 @@ git reset --hard
 
 	hard 后面加提交的head的地址
 
-### 查看更改内容
+## 查看更改内容
 
 - 命令：
 
@@ -220,7 +220,7 @@ git reset --hard
 git diff [<filename>]
 ```
 
-### 全局配置
+## 全局配置
 
 - 命令：
 
@@ -229,6 +229,6 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
-### 参考链接：
+## 参考链接：
 [git教程廖雪峰](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 [git简明指南](https://rogerdudler.github.io/git-guide/index.zh.html)
